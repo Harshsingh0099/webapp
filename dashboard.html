@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Welcome {{ current_user.username }}</h3>
+<p>Your role: {{ current_user.role }}</p>
+<a href="/admin">Admin Panel</a><br>
+<a href="/logout">Logout</a>
+{% endblock %}
